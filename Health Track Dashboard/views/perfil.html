@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <title>Health Track</title>
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../images/cardiogram.webp" alt="">
+                <h2>Health Track</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="selected">
+                        <i class="fas fa-user"></i>
+                        <a href="perfil.html">Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-balance-scale-left"></i>
+                        <a href="gerenciarPeso.html">Gerenciar Peso e Altura</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="gerenciarPressao.html">Gerenciar Pressão Arterial</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-skating"></i>
+                        <a href="gerenciarAtividades.html">Gerenciar Atividades Físicas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="gerenciarAlimentos.html">Gerenciar Alimentos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calculator"></i>
+                        <a href="calcularIMC.html">Calcular IMC</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"> <i class="fas fa-home"></i> Dashboard</a>
+                <a href="../index.html"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>Perfil</h2>
+                </div>
+                <div class="perfil-parent">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <div class="img">
+
+                            </div>
+                        </div>
+                        <div class="perfil-form">
+                            <div class="dynamic-content">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Nome completo</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Nome completo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="idade" class="form-label">Idade</label>
+                                        <input type="text" class="form-control" id="idade" placeholder="Idade">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="genero">Gênero</label>
+                                        <select class="form-control" id="genero">
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Senha">
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customfile">
+                                        <label for="customfile" class="custom-file-label">Enviar foto de perfil</label>
+                                    </div>
+                                    <button type="submit" class="btn">Salvar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
